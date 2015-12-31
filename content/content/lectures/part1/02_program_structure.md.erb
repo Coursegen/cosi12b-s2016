@@ -1,0 +1,90 @@
+---
+title: Parts of a program
+---
+#### Intro
+* All languages have a particular way write a program
+* **Very particular!**
+* A really simple program fits within a single file
+* Almost all real programs take more than one file
+* Each file is a building block, a component
+* YOU the programmer decides what the job is of each file
+
+#### Kinds of errors you will write
+* Types
+  * Syntax errors - error message from the "compiler", before it even runs
+  * Logic errors - the program doesn't do what you expect
+  * Crashes or exceptions - the program doesn't get anywhere
+* Work on recognizing what kind of error you have
+* **Take a 1/2 second to read the error message!!!**
+
+#### "Hello World!"
+<%= code_begin %>
+public class Hello {
+	public static void main(String[] args){
+		System.out.println(“Hello World.”);
+
+	}
+}
+<%= code_end %>
+#### Facts about java programs
+* Yes, this is a valid Java program
+* But to run it you have to put it into a text file
+* File is called the same as the class, hello.java
+* Java"source code"
+  * Usually spaces don't matter
+  * Usually extra lines don't matter
+  * Everything is case sensitive. All these are different!
+    * int myRecord;
+    * int Myrecord;
+    * int myrecord;
+    * Int myrecord; **wrong!!**
+
+#### Template for a Java program
+
+<%= code_begin %>
+public class <name> {
+  public void method1(<arguments>) {
+    <statement>;
+    <statement>;
+    ...
+    <statement>;
+  }
+  public void method2(<args>) {
+    <statement>;
+    ...
+  }
+  ...
+}
+
+<%= code_end %>
+
+* Whats a statement? A line of java, e.g. for ..., return ... etc.
+* Note use of \<name\>: where you put a name, etc.
+
+#### What's a method?
+* A method is just a named set of statements
+* Instead of copying the lines you create a sub-routine
+* What happens when a method is called?
+  * Exection "jumps" into that method
+  * Executes the statements of that method
+  * "Jumps" back to the opoint where the message was called
+
+#### What's a class?
+* A named collection of methods and fields
+* A "blueprint" to createa a new Object
+
+#### Variables and types
+
+<%= code_begin %>
+public class Hello {
+  public static void main(String[] args){
+    int weeksPerYear;
+    int daysPerWeek;
+    weeksPerYear = 52;
+    daysPerWeek = 7
+    int daysPerYear;
+    daysPeryear = weeksPerYear * daysPerWeek;
+    System.out.println(daysPerYear);
+  }
+}
+<%= code_end %>
