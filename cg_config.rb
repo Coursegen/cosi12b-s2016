@@ -1,7 +1,14 @@
 require 'coursegen'
 
+# bucket for AWS Deployment of the course
+AWS_BUCKET = "cosi12b-s2016"
+
+# Local directory path for directory of content
+CONTENT_PATH = "/mydev/cosi12b-s2016"
+
+
 # Copyright string
-COPYRIGHT_STRING = "Copyright (2013-2014) R. Pito Salas, pitosalas@brandeis.edu"
+COPYRIGHT_STRING = "Copyright (2013-2016) R. Pito Salas, pitosalas@brandeis.edu"
 
 # Course short name
 COURSE_SHORT_NAME = "Cosi12b"
