@@ -20,9 +20,8 @@ title: Parts of a program
 #### "Hello World!"
 <%= code_begin %>
 public class Hello {
-	public static void main(String[] args){
-		System.out.println(“Hello World.”);
-
+  public static void main(String[] args){
+    System.out.println(“Hello World.”);
 	}
 }
 <%= code_end %>
@@ -71,9 +70,55 @@ public class <name> {
 
 #### What's a class?
 * A named collection of methods and fields
-* A "blueprint" to createa a new Object
+* A "blueprint" or "cookiecutter" to createa a new Object
+* More to come...
 
-#### Variables and types
+#### Data, expressions and variables
+
+* At a simplistic level, programs manipulate data
+* Read, write, change, print, sort, etc. etc
+* Data is always known by its datatype (aka type)
+  * 1 + "House" ?
+  * true / 200 ?
+* To make sense, we need to tell Java the datatypes of things
+* Built-in or "primitive Data types"
+  * `int`: integers, e.g. 12, 321, -300, 0
+  * `double`: real numbers, e.g. 3.1, -0.25, 3.415, 1.0
+  * `boolean`: true/false or logical values, e.g. true, false
+  * `char`: a single character, e.g. 'A', '本', ':', '\n'
+
+##### Numeric Expressions
+* Like a calculator, simple mathematical expressions
+* Combining numbers in valid ways
+  * `1 + 2` equals 3
+  * `10 * (3 + 5)` equals 80
+  * `1.5 + 2.5` equals 4.0
+  * And so on...
+
+  ##### Logical or boolean expresions
+  * Comparing values
+    * `1 == 2` (equals false)
+    * `0 == 0` (equals true)
+    * `(1 == 2) || (2 == 2)` (equals false)
+    * And so on...
+
+  ##### String expressions
+  * The word **string** in programming almost always means a text string or a string of chacters
+  * Combining strings of text
+    * `"My Name is" + "Pito" (equals "My name isPito")
+    * `"1" + " " + "is equal to one"` (equals "1 is equal to 1"
+
+  ##### Variables
+  * A "box" that can contain something
+    * Has a name ("myFavoriteShoeSize")
+    * Has a datatype (int)
+    * Has something stored in it (12)
+  * Like a real box, you can't store a car in a shoebox!
+  * The datatype says what kinds of stuff fits in that box
+  * Variables have to be created ahead of time (declared)
+  * At that time a datatype and name are supplied
+
+#### Example
 
 <%= code_begin %>
 public class Hello {
