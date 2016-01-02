@@ -1,10 +1,19 @@
-Crashlog created at 2016-01-01 21:34:44 -0400
+Crashlog created at 2016-01-02 17:37:16 -0400
 
 ===== MESSAGE:
 
-SyntaxError: item /content/lectures/part1/02_program_structure.md.erb (rep default):125: syntax error, unexpected ';', expecting ')'
-...nto it (initialize it)").to_s); _erbout.concat "\n\n#### Exa...
-...                               ^
+SyntaxError: item /content/lectures/part1/02_program_structure.md.erb (rep default):219: syntax error, unexpected ')'
+for (int i = 1; i <= 4; i++) {
+                            ^
+item /content/lectures/part1/02_program_structure.md.erb (rep default):220: syntax error, unexpected ')'
+  for (int j = 1; j <= 5; j++) {
+                              ^
+item /content/lectures/part1/02_program_structure.md.erb (rep default):222: syntax error, unexpected '}', expecting ')'
+item /content/lectures/part1/02_program_structure.md.erb (rep default):223: syntax error, unexpected tIDENTIFIER, expecting ')'
+  System.out.println();  // to end the line
+                              ^
+item /content/lectures/part1/02_program_structure.md.erb (rep default):224: syntax error, unexpected '}', expecting ')'
+item /content/lectures/part1/02_program_structure.md.erb (rep default):225: unterminated string meets end of file
 
 ===== COMPILATION STACK:
 
