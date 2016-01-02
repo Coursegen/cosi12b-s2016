@@ -73,6 +73,14 @@ public class <name> {
 * A "blueprint" or "cookiecutter" to createa a new Object
 * More to come...
 
+#### Good To Know
+* A program’s class name and file name should match, so Class “Hello” should be stored in a file named “Hello.java”
+* Java is case sensitive
+* class “HELLO” is different from “Hello”
+* Class name should begin with capital letter
+* Method names should begin with lowercase e.g., main, mainOld, mainNew
+* You cannot name classes (and variables, etc) with one of the reserved keywords public, private, main, void, abstract, .....
+
 #### Data, expressions and variables
 
 * At a simplistic level, programs manipulate data
@@ -117,6 +125,7 @@ public class <name> {
   * The datatype says what kinds of stuff fits in that box
   * Variables have to be created ahead of time (declared)
   * At that time a datatype and name are supplied
+  * <%= nb("You cannot use a variable before you put a value into it (initialize it)") %>
 
 #### Example
 
@@ -132,4 +141,30 @@ public class Hello {
     System.out.println(daysPerYear);
   }
 }
+<%= code_end %>
+
+<%= callout("Good to know", " You can declare and initialize a variable in one statement: int i = 0; ") %>
+
+##### Assignment Statements
+* One of the must common statements
+* Stores a value in a variable `recordCount = 12;`
+* The LHS (left hand side)
+  * A variable name: `childName = "Pito";`
+  * An array reference: `child[1] = "Pito";`
+  * more to come
+* The RHS (right hand side)
+  * An expression of some kind
+* <%= nb("Datatype of LHS must match datatype of RHS!") %>
+
+##### Examples
+<%= code_begin %>
+int count;
+bool valid;
+int[] hand;
+
+count = 1 * 100;
+count = "one hundred";
+valid = true;
+valid = count == 100;
+valid = count == "one hundred";
 <%= code_end %>
