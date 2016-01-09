@@ -1,0 +1,55 @@
+---
+title: Syllabus for Cosi 12b
+---
+<% tbh = TableHelper.new(:normal) %>
+<% tbh.headers("", "") %>
+<% tbh.row("Instructor", "Pito Salas") %>
+<% tbh.row("Class Times", "Monday, Wednesday and Thursday, 12:00 to 12:50pm") %>
+<% tbh.row("Location", "TBD") %>
+<% tbh.row("Office Hours", "1 hour before class") %>
+<% tbh.row("Prerequisites", "Cosi 11a") %>
+<% tbh.row("Homework", "Weekly reading and programming assignments. Success in this 4 credit hour course is based on the expectation that students will spend a minimum of 9 hours of study time per week in preparation for class") %>
+<% tbh.row("Grading", "0-100 based. See below.") %>
+<% tbh.row("Email contact: ", "pitosalas@brandeis.edu") %>
+<% tbh.row("Office", "Feldberg 131") %>
+<%= tbh.render %>
+
+#### Introduction
+
+<%= callout("", "Knowing how to program is a poweful thing. Nowadays software has an important role in just about any discipline, from Physics to Robotics, from Medicine to Computer Science.")%>
+
+<%= callout("", "For me, learning to program is learning a new medium. Like writing or mathematics, programming is a creative, rewarding and powerful tool that is also amazingly fun! I believe that deeply and I hope to have you discover that for yourself.") %>
+
+In this course we continue developing your programming fundmanetals, building on what you learned in Cosi 11a. Specifically we will be doing these three things:
+
+1. Go further in understanding basic programming concepts and abstractions like object oriented programming, error and exception management, class libraries and more
+1. Get a lot of practice programming and designing programs built up of multiple classes. Decomposing a problem statement and breaking it into steps that can be programmed. Understanding what of all the capabilities available can be used to solve the problem.
+1. Begin seeing "Software Development" as something beyond programming, encompassing design, development tools, libraries, debugging and testing and other processes.
+
+Upon completion of this class, students will be able to understand the concept of object-oriented programming (OOP) as well as the purpose and usage of inheritance, polymorphism, encapsulation and method overloading. They will be able to create Java application programs using sound OOP practices (e.g., interfaces and APIs) and proper program structuring.  Finally, they will be able to develop programs using the Java Collection API as well as the Java standard class library.
+
+#### Learning Objectives
+
+* Cover issues related to the definition, creation and usage of classes, objects and methods.
+* Discuss the principles of inheritance and polymorphism and demonstrate through problem analysis assignments how they relate to the design of methods, abstract classes and interfaces.
+* Provide the foundation of good programming skills by discussing key issues in the design of object-oriented software, including programming design patterns and programming testing.
+* Cover the basics of creating APIs as well as allow students to explore the Java Abstract Programming Interface (API) and Java Collection Framework through programming assignments.
+
+#### Textbook
+
+**Building Java Programs - A Back to Basics Approach (3rd Edition) by Stuart Reges and Marty Stepp, Addison Wesley.**
+
+We will not follow the book page by page but it makes a useful supplement to the lecture presentations. It contains practice problems and online videos you can use to study for your exams.
+
+#### Software
+The required software for the course is the Java Development Kit (JDK) 8 and the Eclipse editor.
+
+#### Grading
+<%= include_from_section :resources, :grades %>
+
+#### Class Rules
+
+* No eating in class
+
+#### Academic Honesty
+<%= include_from_section :resources, :honesty %>

@@ -82,7 +82,7 @@ end
 
 
 # Select which .md.erb becomes the home page of the site
-route '/content/intro/course_toc.md.erb' do
+route '/content/resources/syllabus.md.erb' do
   '/index.html'
 end
 
