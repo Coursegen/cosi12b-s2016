@@ -17,7 +17,9 @@ COURSE_ABBREV = "12b"
 # Sections in the right hand margin of the page
 SECTION_CONFIG = [
   SectionDef.new("Resources", "resources", type: :section),
-  SectionDef.new("Extras", "extras", hidden: true, type: :section)
+  SectionDef.new("Extras", "extras", hidden: true, type: :section),
+  SectionDef.new("Topics", "topics", hidden: true, type: :section)
+
 ]
 # Options are:
 # bullet_style: css style for each bullet
