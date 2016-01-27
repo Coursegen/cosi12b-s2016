@@ -5,12 +5,12 @@ title: Syllabus for Cosi 12b
 <% tbh.headers("", "") %>
 <% tbh.row("Instructor", "Pito Salas") %>
 <% tbh.row("Class Times", "Monday, Wednesday and Thursday, 12:00 to 12:50pm") %>
-<% tbh.row("Location", "TBD") %>
-<% tbh.row("Office Hours", "1 hour before class") %>
+<% tbh.row("Location (class and recitation)", "Gerstenzang 121") %>
+<% tbh.row("Pito's Office Hours", "1 hour before class") %>
 <% tbh.row("Prerequisites", "Cosi 11a") %>
 <% tbh.row("Homework", "Weekly reading and programming assignments. Success in this 4 credit hour course is based on the expectation that students will spend a minimum of 9 hours of study time per week in preparation for class") %>
 <% tbh.row("Grading", "0-100 based. See below.") %>
-<% tbh.row("Email contact: ", "pitosalas@brandeis.edu") %>
+<% tbh.row("Email contact", "pitosalas@brandeis.edu") %>
 <% tbh.row("Office", "Feldberg 131") %>
 <%= tbh.render %>
 
@@ -35,21 +35,33 @@ Upon completion of this class, students will be able to understand the concept o
 * Provide the foundation of good programming skills by discussing key issues in the design of object-oriented software, including programming design patterns and programming testing.
 * Cover the basics of creating APIs as well as allow students to explore the Java Abstract Programming Interface (API) and Java Collection Framework through programming assignments.
 
+#### Resources
+* Lecture notes and slides
+* Textbook
+* Latte
+   * Homework submissions
+   * Lecture Slides
+   * Programming Assignments (PAs)
+   * Tutorial Videos
+
+* Course web site
+   * Details about how the course operates
+   * Useful links for further study
+
+* You are responsible for everything there.
+* We will only answer questions posted on the forumn section on Latte
+
 #### Textbook
 
-**Building Java Programs - A Back to Basics Approach (3rd Edition) by Stuart Reges and Marty Stepp, Addison Wesley.**
+**Building Java Programs - A Back to Basics Approach (3rd Edition) by Stuart Reges and Marty Stepp, Pearson.**
 
 We will not follow the book page by page but it makes a useful supplement to the lecture presentations. It contains practice problems and online videos you can use to study for your exams.
 
 #### Software
 The required software for the course is the Java Development Kit (JDK) 8 and the Eclipse editor.
 
-#### Grading
-<%= include_from_section :resources, :grades %>
-
-#### Class Rules
-
-* No eating in class
-
-#### Academic Honesty
-<%= include_from_section :resources, :honesty %>
+#### Other very important details
+* <%= link_to_section :resources, :grades %>
+* <%= link_to_section :resources, :honesty %>
+* <%= link_to_section :resources, :recitations %>
+* <%= link_to_section :resources, :rules %>
